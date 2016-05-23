@@ -25,6 +25,7 @@ Installer for @Loopuleasa's Dota2-TheCore-Config-Engine. This will automate the 
 
 ##How To Use:
 
+#In Windows
 1.  Download: https://github.com/AetherV/Dota2-Config-Installer/blob/master/Compiled/Dota2%20Config%20Installer%20v1.jar?raw=true
 2.  (If Needed) Install Java
 3.  Run Jar File (double click will do in most cases)
@@ -32,8 +33,6 @@ Installer for @Loopuleasa's Dota2-TheCore-Config-Engine. This will automate the 
 5.  Choose your desired config (9/10 Cases you will want "Loopuleasa's Super Compact QWERTG-DFXCV Layout")
 6.  Press Install
   
-
-##In Dota2:
-
+#In Dota2:
 1.  Enable the Console 
 2.  Before the match begins, type in "exec loop.cfg", "exec tab.cfg" or "exec core.cfg" depending on which version you wish to use
