@@ -1,0 +1,150 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=14020, tid=14028
+#
+# JRE version:  (8.0_66-b18) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.66-b18 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000000740800):  JavaThread "Unknown thread" [_thread_in_vm, id=14028, stack(0x00000000023d0000,0x00000000024d0000)]
+
+Stack: [0x00000000023d0000,0x00000000024d0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000000740800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=14028, stack(0x00000000023d0000,0x00000000024d0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5900000, 0x00000000d8380000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5900000,0x00000000d59a6670,0x00000000d7980000)
+  from space 5120K, 0% used [0x00000000d7e80000,0x00000000d7e80000,0x00000000d8380000)
+  to   space 5120K, 0% used [0x00000000d7980000,0x00000000d7980000,0x00000000d7e80000)
+ ParOldGen       total 87552K, used 0K [0x0000000080a00000, 0x0000000085f80000, 0x00000000d5900000)
+  object space 87552K, 0% used [0x0000000080a00000,0x0000000080a00000,0x0000000085f80000)
+ Metaspace       used 743K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011890000,0x0000000011c90000] byte_map_base: 0x000000001148b000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005a97a5b0
+ Begin Bits: [0x0000000012740000, 0x0000000014718000)
+ End Bits:   [0x0000000014718000, 0x00000000166f0000)
+
+Polling page: 0x00000000006b0000
+
+CodeCache: size=245760Kb used=327Kb max_used=327Kb free=245432Kb
+ bounds [0x00000000024d0000, 0x0000000002740000, 0x00000000114d0000]
+ total_blobs=56 nmethods=0 adapters=37
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.025 loading class java/lang/Short
+Event: 0.026 loading class java/lang/Short done
+Event: 0.026 loading class java/lang/Integer
+Event: 0.026 loading class java/lang/Integer done
+Event: 0.026 loading class java/lang/Long
+Event: 0.026 loading class java/lang/Long done
+Event: 0.026 loading class java/lang/NullPointerException
+Event: 0.026 loading class java/lang/NullPointerException done
+Event: 0.026 loading class java/lang/ArithmeticException
+Event: 0.026 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff622b90000 - 0x00007ff622bc7000 	C:\Program Files\Java\jre1.8.0_66\bin\javaw.exe
+0x00007ffb29480000 - 0x00007ffb29641000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb26ae0000 - 0x00007ffb26b8d000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffb25b30000 - 0x00007ffb25d18000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffb292b0000 - 0x00007ffb29357000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffb29380000 - 0x00007ffb2941d000 	C:\Windows\system32\msvcrt.dll
+0x00007ffb26880000 - 0x00007ffb268db000 	C:\Windows\system32\sechost.dll
+0x00007ffb26f60000 - 0x00007ffb2707c000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffb29150000 - 0x00007ffb292a6000 	C:\Windows\system32\USER32.dll
+0x00007ffb268e0000 - 0x00007ffb26a66000 	C:\Windows\system32\GDI32.dll
+0x00007ffb1d510000 - 0x00007ffb1d784000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+0x00007ffb27080000 - 0x00007ffb272fd000 	C:\Windows\system32\combase.dll
+0x00007ffb25dd0000 - 0x00007ffb25e3a000 	C:\Windows\system32\bcryptPrimitives.dll
+0x00007ffb26f20000 - 0x00007ffb26f5b000 	C:\Windows\system32\IMM32.DLL
+0x00007ffb0ed60000 - 0x00007ffb0ed92000 	C:\Program Files (x86)\AVG\Av\avghooka.dll
+0x000000005cc00000 - 0x000000005ccd2000 	C:\Program Files\Java\jre1.8.0_66\bin\msvcr100.dll
+0x000000005a170000 - 0x000000005a9f9000 	C:\Program Files\Java\jre1.8.0_66\bin\server\jvm.dll
+0x00007ffb27960000 - 0x00007ffb27968000 	C:\Windows\system32\PSAPI.DLL
+0x00007ffb1a0b0000 - 0x00007ffb1a0b9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb290e0000 - 0x00007ffb2914b000 	C:\Windows\system32\WS2_32.dll
+0x00007ffb241c0000 - 0x00007ffb241e3000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb21ac0000 - 0x00007ffb21aca000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb24160000 - 0x00007ffb2418c000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffb26830000 - 0x00007ffb26873000 	C:\Windows\system32\cfgmgr32.dll
+0x000000005cda0000 - 0x000000005cdaf000 	C:\Program Files\Java\jre1.8.0_66\bin\verify.dll
+0x000000005cd70000 - 0x000000005cd99000 	C:\Program Files\Java\jre1.8.0_66\bin\java.dll
+0x000000005cd50000 - 0x000000005cd66000 	C:\Program Files\Java\jre1.8.0_66\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: loopuleasa_Config.GUI_project2
+java_class_path (initial): C:\Users\User1\Documents\GitHub\Dota2 Config Installer\Dota2 Config Installer;E:\Cloud\OneDrive\BlueJ\commons-io-2.5.jar;E:\Cloud\OneDrive\BlueJ\zip4j_1.3.2.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\Program Files\Java\jdk1.6.0_27\bin;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\eclipse;
+USERNAME=User1
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 10586 (10.0.10586.0)
+
+CPU:total 8 (8 cores per cpu, 1 threads per core) family 21 model 2 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 8344316k(481944k free), swap 14656092k(5316k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.66-b18) for windows-amd64 JRE (1.8.0_66-b18), built on Nov  9 2015 10:51:13 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue May 24 23:32:05 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -1,0 +1,6 @@
+package loopuleasa_Config;
+import org.apache.commons.io.FileUtils;
+
+public class MantaInstall {
+
+}
