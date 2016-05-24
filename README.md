@@ -29,7 +29,7 @@ Now allows the installation of Manta Configurations
 ##How To Use:
 
 ###In Windows
-1.  Download: https://github.com/AetherV/Dota2-Config-Installer/blob/master/Compiled/Dota2%20Config%20Installer%20v1.jar?raw=true
+1.  Download: https://github.com/AetherV/Dota2-Config-Installer/blob/master/Compiled/16-5-25%20Dota2%20Conig%20Installer.jar?raw=true
 2.  (If Needed) Install Java
 3.  Run Jar File (double click will do in most cases)
 4.  Locate the "dota 2 beta folder", typically at "C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta"
