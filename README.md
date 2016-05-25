@@ -1,5 +1,5 @@
 # AetherV's Dota2-Config-Installer
-
+##As of Vulcan Patch, this project is put on hold, since Valve removed the ability to make productive autoexecs. Once this patch is reversed, I shall continue supporting this project. Until then, this project is on hold. 
 
 ##What is This?
 Installer for @Loopuleasa's Dota2-TheCore-Config-Engine. This will automate the installation procedure.
