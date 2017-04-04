@@ -1,7 +1,7 @@
 # AetherV's Dota2-Config-Installer
 ## As of Vulcan Patch, this project is put on hold, since Valve removed the ability to make productive autoexecs. Once this patch is reversed, I shall continue supporting this project. Until then, this project is on hold. 
 
-##What is This?
+## What is This?
 Installer for @Loopuleasa's Dota2-TheCore-Config-Engine. This will automate the installation procedure.
 
 
@@ -26,7 +26,7 @@ Now allows the installation of Manta Configurations
 - Remove Temp Files 
 
 
-##How To Use:
+## How To Use:
 
 ### In Windows (should be similar on other platforms)
 1.  Download: - https://github.com/AetherV/Dota2-Config-Installer/blob/master/Compiled/16-5-25%20Dota2%20Conig%20Installer.jar?raw=true
